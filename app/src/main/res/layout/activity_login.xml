@@ -1,51 +1,77 @@
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:background="@android:color/black"
+    tools:context=".MainActivity">
 
-    <RelativeLayout
+    <ImageView
+        android:id="@+id/login_background_image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#0099CC"
-        android:layout_weight="2" />
+        android:alpha="0.5"
+        android:scaleType="centerCrop" />
 
-    <RelativeLayout
-        android:layout_weight="1"
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-100dp"
+        android:scaleX="0.75"
+        android:scaleY="0.75"
+        android:src="@drawable/logo_full" />
+
+    <EditText
+        android:id="@+id/username_edittext"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        android:layout_height="wrap_content"
+        android:hint="@string/username"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_above="@+id/password_edittext"
+        android:theme="@android:style/Theme.Material"
+        android:layout_centerHorizontal="true" />
 
-        <EditText
-            android:id="@+id/username_edittext"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/username"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:layout_above="@+id/password_edittext"
-            android:layout_centerHorizontal="true" />
+    <EditText
+        android:id="@+id/password_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerInParent="true"
+        android:theme="@android:style/Theme.Material"
+        android:inputType="textPassword" />
 
-        <EditText
-            android:id="@+id/password_edittext"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/password"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:layout_centerInParent="true"
-            android:inputType="textPassword" />
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:layout_below="@+id/password_edittext"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_toLeftOf="@+id/placeholder"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"/>
 
-        <Button
-            android:id="@+id/login_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/login"
-            android:layout_below="@+id/password_edittext"
-            android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/placeholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_edittext"
+        android:layout_centerHorizontal="true"/>
 
-    </RelativeLayout>
+    <Button
+        android:id="@+id/sign_up_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:layout_below="@+id/password_edittext"
+        android:layout_toRightOf="@+id/placeholder"
+        android:layout_centerHorizontal="true"/>
 
-</LinearLayout>
+</RelativeLayout>
 

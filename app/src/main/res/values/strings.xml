@@ -1,9 +1,10 @@
 <resources>
-    <string name="app_name">PackManager</string>
+    <string name="app_name">ShipIt</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="title_activity_home">HomeActivity</string>
@@ -13,8 +14,37 @@
     <string name="no">No</string>
     <string name="friends">Friends</string>
     <string name="packages">Packages</string>
+    <string name="done">Done</string>
 
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_sign_up">Sign Up</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="login_failure_toast">Couldn\'t log in. Check your username and password.</string>
+    <string name="name_cannot_be_empty">Name cannot be empty.</string>
+    <string name="username_cannot_be_empty">Username cannot be empty.</string>
+    <string name="password_cannot_be_empty">Password cannot be empty.</string>
+    <string name="retype_password">Please retype your password.</string>
+    <string name="phone_number_cannot_be_empty">Phone number cannot be empty.</string>
+    <string name="logged_in_as">Logged in as</string>
+    <string name="title_activity_add_friend">Add Friend</string>
+    <string name="gcm_token_success">GCM token sent.</string>
+    <string name="gcm_token_failure">GCM token failure.</string>
+    <string name="friend_request_sent">Friend request sent.</string>
+    <string name="new_friend_request">New Friend Request</string>
+    <string name="wants_to_be_friends">wants to be friends.</string>
+    <string name="accept">Accept</string>
+    <string name="deny">Deny</string>
+    <string name="you_are_friends_with">You are now friends with</string>
+    <string name="users_list_updated">Users list updated.</string>
+    <string name="send_package_request">Send Package Request</string>
+    <string name="wants_to_send_you">wants to send you</string>
+    <string name="denied_your_package">denied your package</string>
+    <string name="title_activity_add_new_package">AddNewPackageActivity</string>
+    <string name="status">Status</string>
+    <string name="package_in_transit">Package is in transit.</string>
+    <string name="package_delayed">Package delayed.</string>
+    <string name="package_delivered">Package delivered.</string>
 
 </resources>

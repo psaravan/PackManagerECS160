@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.ecs160.packmanager.views.CircleView
+        android:id="@+id/friend_avatar"
+        android:layout_centerVertical="true"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        custom:titleSize="28dp"
+        custom:titleColor="#FFFFFF"
+        custom:subtitleText=""
+        custom:strokeColorValue="@color/colorPrimary"
+        custom:backgroundColorValue="@color/colorPrimary"
+        custom:fillColor="@color/colorPrimary"
+        custom:fillRadius="0.9"
+        custom:strokeWidthSize="0"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/friend_info_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_toRightOf="@+id/friend_avatar" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/friend_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:text="Saravan Pantham" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/friend_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:text="saravan.pantham@gmail.com" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/add_friend_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_plus_white_18dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:paddingRight="-5dp"
+        android:paddingLeft="-5dp"
+        android:backgroundTint="@color/colorAccent" />
+
+</RelativeLayout>
